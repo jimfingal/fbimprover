@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Improver",
+  "version": "1.0",
+  "description": "My first Chrome extension.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["jquery.js", "sitefilter.js"],
+      "all_frames" : true,
+       "run_at": "document_end"
+
+    }
+  ],
+
+  "permissions": [
+     "activeTab",
+      "https://www.facebook.com/*"
+
+   ],
+   "browser_action": {
+    "default_title": "Filters out annoying links"
+  }
+}
