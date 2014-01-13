@@ -1,8 +1,9 @@
 
-var mySites= [new RegExp(/.*huffington.*$/),
+var mySites= [
 			new RegExp(/.*buzzfeed.*$/),
 			new RegExp(/.*viralnova.*$/),
-			new RegExp(/.*gawker.*$/)];
+			new RegExp(/.*upworthy.*$/)
+			];
 
 
 function removeLinks() {
